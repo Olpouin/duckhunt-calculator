@@ -37,13 +37,10 @@ const dpd = new DucksPerDay();
 
 let chartData = [];
 let chartLabels = [];
-let users = 0;
-while (users <= 15000) {
-	console.log(users);
+for (let users = 0; users <= 15000; users += 300) {
 	var ducks = Math.round(125+(users/(5+(users/300))));
 	chartData.push({x:users,y:ducks});
 	chartLabels.push(users);
-	users += 300;
 }
 var chart = new Chart(document.getElementById('chart').getContext('2d'), {
 	type: 'line',

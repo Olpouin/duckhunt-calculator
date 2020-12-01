@@ -58,3 +58,9 @@ input[type="number"] {
 	border: none;
 	display: inline;
 }
+
+@media only all and (max-width: 1000px) {
+	.graphs > canvas {
+		max-width: 100%;
+	}
+}
