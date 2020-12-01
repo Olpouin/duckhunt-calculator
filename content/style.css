@@ -9,12 +9,23 @@ body {
 	src: url('OpenSans-Regular.ttf');
 }
 
+a {
+	color: inherit;
+}
+a:hover {
+	color: #1E448A;
+}
+/*Main elements*/
 header {
 	background-color: rgba(0, 0, 0, 0.1);
 	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+header div {
+	position: absolute;
+	left: 0;
 }
 header a {
 	color: inherit;
@@ -24,6 +35,7 @@ header a {
 	font-size: 15px;
 }
 header a:hover {
+	color: #FFFFFF !important;
 	text-decoration: underline;
 }
 section {

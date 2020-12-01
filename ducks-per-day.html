@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ducks per day • DuckHunt Calculator</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+		<script src="js/main.js" defer></script>
+		<script src="js/dpd.js" defer></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<section style="text-align:center;">
+			<h1>Ducks per day calculator</h1>
+			<div class="subtitle">DuckHunt has a maximum value for ducks per days, following the formula <span style="font-family:monospace">125 + (membercount / (5+ (membercount / 300)))</span></div>
+			<h2>Calculator</h2>
+			<form>
+				<label for="users-range">Users :</label><br>
+				<input type="number" id="users-number" min="1" max="500000" value="50" oninput="dpd.input='range';dpd.users=this.value;"><br>
+				<input type="range"  id="users-range"  min="1" max="10000"  value="50" oninput="dpd.input='number';dpd.users=this.value;">
+			</form>
+			<form>
+				<label for="ducks-range">Ducks per day :</label><br>
+				<input type="number" id="ducks-number" min="125" max="424" oninput="dpd.input='range';dpd.ducks=this.value;"><br>
+				<input type="range"  id="ducks-range"  min="125" max="424" oninput="dpd.input='number';dpd.ducks=this.value;">
+			</form>
+			<h2>Graphic</h2>
+			<div class="graphs"><canvas id="chart" width="50%"></canvas></div>
+		</section>
+	</body>
+</html>
