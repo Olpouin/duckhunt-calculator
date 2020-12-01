@@ -21,6 +21,7 @@ class DucksPerDay {
 		return Math.round(this._users);
 	}
 	get ducks() {
+		if (this._ducks == 69420) alert("heh");
 		if (this._ducks < 125) return 125;
 		if (this._ducks > 424) return 424;
 		return Math.round(this._ducks);
@@ -48,7 +49,7 @@ var chart = new Chart(document.getElementById('chart').getContext('2d'), {
 		labels: chartLabels,
 		datasets: [{
 			label: 'Max ducks per day',
-			borderColor: 'rgb(255, 99, 132)',
+			borderColor: '#AE1C28 ',
 			data: chartData
 		}]
 	},

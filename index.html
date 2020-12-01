@@ -3,15 +3,23 @@
 	<head>
 		<title>DuckHunt Calculator</title>
 		<script src="js/main.js" defer></script>
+		<script>
+			var steefClicks = 0;
+			function steef() {
+				steefClicks++;
+				if (steefClicks == 5) alert(":ping_sock:");
+			}
+		</script>
 		<link rel="stylesheet" href="content/style.css" type="text/css" media="screen"/>
 		<meta charset="utf-8">
 	</head>
 	<body>
+		<!--STOP LOOKING AT ME!-->
 		<section style="text-align:center;">
 			<h1>DuckHunt Calculator</h1>
 			<div class="subtitle">
 				A calculator for the <a href="https://docs.duckhunt.me/">DuckHunt</a> bot<br>
-				This website is a conversion of Steef's Excel sheets
+				This website is a conversion of <span onclick="steef()">Steef</span>'s Excel sheets
 			</div>
 		</section>
 	</body>
