@@ -1,0 +1,60 @@
+body {
+	background-color: rgb(42, 42, 46);
+	color: #FFFFFF;
+	font-family: opensans-regular, sans-serif;
+	margin: 0;
+}
+@font-face {
+	font-family: 'opensans-regular';
+	src: url('OpenSans-Regular.ttf');
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+	font-size: 15px;
+}
+header a:hover {
+	text-decoration: underline;
+}
+section {
+	margin-bottom: 52px;
+}
+
+h1 {
+	text-align: center;
+}
+h1 + .subtitle {
+	text-align: center;
+}
+/*Graphs*/
+.graphs {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.graphs > canvas {
+	flex: 1;
+	max-width: 50%;
+}
+/*Forms*/
+input {
+	margin: 0;
+}
+input[type="number"] {
+	background-color: unset;
+	color: inherit;
+	border: none;
+	display: inline;
+}
